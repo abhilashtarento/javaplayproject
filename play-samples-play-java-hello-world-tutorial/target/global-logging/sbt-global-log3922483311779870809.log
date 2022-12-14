@@ -1,0 +1,3 @@
+[debug] > Exec(h2-browser, None, None)
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] > Exec(idea-shell, None, None)

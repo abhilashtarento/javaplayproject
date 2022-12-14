@@ -1,0 +1,6 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Abhilash Manikoth\Downloads\play-samples-play-java-hello-world-tutorial\play-samples-play-java-hello-world-tutorial\app\model\PostRepositoryImpl.java:27:1:  error: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m    @Overridert[0m
+[0m[[0m[31merror[0m] [0m[0m     ^  symbol:   class Overridert[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class PostRepositoryImpl[0m
+[0m[[0m[31merror[0m] [0m[0m1 error[0m
+[0m[[0m[31merror[0m] [0m[0mPicked up _JAVA_OPTIONS: -Xmx1024M[0m

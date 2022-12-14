@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(SBT RUN, Some(e5d61c9f-070f-4ceb-bf10-25f1358682b7), Some(CommandSource(console0)))[0m
+[0m[[0m[31merror[0m] [0m[0mExpected '/'[0m
+[0m[[0m[31merror[0m] [0m[0mSBT RUN[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m

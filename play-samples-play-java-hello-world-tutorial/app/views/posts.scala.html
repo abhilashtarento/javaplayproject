@@ -1,0 +1,59 @@
+@import form.PostForm
+@import play.mvc.Http.Request
+@(posts: List[model.Post], postForm: Form[PostForm])(implicit request: Request)
+
+@main("Post Page"){
+    <h1>My Posts</h1>
+
+
+@for(post<-posts){
+<div class="container">
+    <h3>@post.getTitle()</h3>
+    <span>
+        @post.getContent()
+    </span>
+</div>
+}
+
+
+
+<div class="col-6" style="border: 2px dotted;">
+    @helper.form(routes.HomeController.createPost){
+    @helper.CSRF.formField
+    <h4>Create New</h4>
+    <div class="row">
+        <div class="col-6">
+            <label>Title</label>
+            <input name="title" style="width: 100%"/>
+        </div>
+        <div class="col-6">
+            <label>Content</label>
+            <input name="content" style="width: 100%"/>
+            <button name="Submit" type="submit" class="btn btn-primary" style="margin-top">Submit</button>
+        </div>
+    </div>
+    }
+    @if(postForm.hasErrors()){
+    <p>The request is invalid</p>
+    }
+</div>
+
+<div class="col-6" style="border: 2px dotted;">
+    @helper.form(routes.HomeController.deletePost){
+    @helper.CSRF.formField
+    <h4>Delete Post</h4>
+    <div class="row">
+        <div class="col-6">
+            <label>Post Name</label>
+            <input name="title" style="width: 100%"/>
+        </div>
+        <div class="col-6">
+            <button name="Submit" type="submit" class="btn btn-primary" style="margin-top">Submit</button>
+        </div>
+    </div>
+    }
+    @if(postForm.hasErrors()){
+    <p>The request is invalid</p>
+    }
+</div>
+}
