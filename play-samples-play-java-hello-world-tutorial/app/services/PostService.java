@@ -39,6 +39,7 @@ public class PostService {
 
     public void deletePost(String postTitle)
     {
+        System.out.println("Deleting "+postTitle);
         postRepository.deletePost(postTitle);
     }
     public void add(PostForm postForm)

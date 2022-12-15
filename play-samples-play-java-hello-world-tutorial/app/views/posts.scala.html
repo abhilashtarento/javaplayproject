@@ -8,10 +8,7 @@
 
 @for(post<-posts){
 <div class="container">
-    <h3>@post.getTitle()</h3>
-    <span>
-        @post.getContent()
-    </span>
+    <h3>@post.getTitle() - @post.getContent()</h3>
 </div>
 }
 

@@ -1,467 +1,29 @@
-2022-12-14 12:54:49,258 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-15 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 12:54:49,264 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-15 - Database [default] initialized
-2022-12-14 12:54:49,279 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-15 - Creating Pool for datasource 'default'
-2022-12-14 12:54:49,367 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-15 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 12:54:50,458 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-15 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-12-15 09:52:54,265 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-11 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
+2022-12-15 09:52:54,270 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-11 - Database [default] initialized
+2022-12-15 09:52:54,276 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-11 - Creating Pool for datasource 'default'
+2022-12-15 09:52:54,334 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-11 - datasource [default] bound to JNDI as DefaultDS
+2022-12-15 09:52:54,947 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-11 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-12-14 12:54:50,550 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-15 - Application started (Dev) (no global state)
-2022-12-14 14:12:14,719 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-1 housekeeper - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h3m55s44ms490µs100ns).
-2022-12-14 15:11:38,668 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-55 - 
-
-! @801750h68 - Internal server error, for (GET) [/getPosts] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[missing argument list for method deletePost in class HomeController
-Unapplied methods are only converted to functions when a function type is expected.
-You can make this conversion explicit by writing `deletePost _` or `deletePost(_,_)` instead of `deletePost`.]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 15:12:28,862 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-55 - 
-
-! @801753dh8 - Internal server error, for (GET) [/getPosts] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[not enough arguments for method deletePost: (title: String, request: play.mvc.Http.Request): play.mvc.Result.
-Unspecified value parameter request.]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 15:13:18,577 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-14 - Shutting down connection pool.
-2022-12-14 15:13:19,071 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-55 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 15:13:19,071 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-55 - Database [default] initialized
-2022-12-14 15:13:19,072 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-55 - Creating Pool for datasource 'default'
-2022-12-14 15:13:19,083 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-55 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 15:13:19,331 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-55 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2022-12-15 09:52:55,007 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-11 - Application started (Dev) (no global state)
+2022-12-15 09:58:12,747 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-11 - Shutting down connection pool.
+2022-12-15 09:58:13,051 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-40 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
+2022-12-15 09:58:13,052 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-40 - Database [default] initialized
+2022-12-15 09:58:13,052 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-40 - Creating Pool for datasource 'default'
+2022-12-15 09:58:13,058 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-40 - datasource [default] bound to JNDI as DefaultDS
+2022-12-15 09:58:13,275 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-40 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.csrf.CSRFFilter
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
 
-2022-12-14 15:13:19,344 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-55 - Application started (Dev) (no global state)
-2022-12-14 15:14:13,109 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-80 - 
+2022-12-15 09:58:13,285 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-40 - Application started (Dev) (no global state)
+2022-12-15 09:58:13,864 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-8 - 
 
-! @801759bj5 - Internal server error, for (GET) [/favicon.ico] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[missing argument list for method deletePost in class ReverseHomeController
-Unapplied methods are only converted to functions when a function type is expected.
-You can make this conversion explicit by writing `deletePost _` or `deletePost(_)` instead of `deletePost`.]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 15:14:15,194 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-80 - 
-
-! @801759ep0 - Internal server error, for (GET) [/getPosts] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[missing argument list for method deletePost in class ReverseHomeController
-Unapplied methods are only converted to functions when a function type is expected.
-You can make this conversion explicit by writing `deletePost _` or `deletePost(_)` instead of `deletePost`.]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 15:50:45,061 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-88 - 
-
-! @8017a44ag - Internal server error, for (GET) [/getPosts] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[missing argument list for method deletePost in class ReverseHomeController
-Unapplied methods are only converted to functions when a function type is expected.
-You can make this conversion explicit by writing `deletePost _` or `deletePost(_)` instead of `deletePost`.]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 15:52:50,845 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-13 - Shutting down connection pool.
-2022-12-14 15:52:51,178 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-89 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 15:52:51,179 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-89 - Database [default] initialized
-2022-12-14 15:52:51,179 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-89 - Creating Pool for datasource 'default'
-2022-12-14 15:52:51,185 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-89 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 15:52:51,454 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-89 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 15:52:51,467 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-89 - Application started (Dev) (no global state)
-2022-12-14 16:21:30,297 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m8s529ms440µs100ns).
-2022-12-14 16:32:50,655 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=7m20s307ms504µs500ns).
-2022-12-14 16:47:19,948 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=10m59s237ms58µs200ns).
-2022-12-14 17:05:43,231 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=1m23s13ms524µs200ns).
-2022-12-14 17:08:14,668 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-15 - Shutting down connection pool.
-2022-12-14 17:08:15,062 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-179 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:08:15,062 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-179 - Database [default] initialized
-2022-12-14 17:08:15,063 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-179 - Creating Pool for datasource 'default'
-2022-12-14 17:08:15,070 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-179 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:08:15,435 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-179 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:08:15,450 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-179 - Application started (Dev) (no global state)
-2022-12-14 17:08:57,582 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-10 - 
-
-! @8017kb406 - Internal server error, for (POST) [/deletePost] ->
- 
-play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalArgumentException: Update/delete queries cannot be typed]]
-	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
-	at scala.Option.map(Option.scala:242)
-	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
-	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
-	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:264)
-	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:436)
-	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:428)
-	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:490)
-	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
-	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
-	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
-	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-Caused by: java.lang.IllegalArgumentException: Update/delete queries cannot be typed
-	at org.hibernate.internal.AbstractSharedSessionContract.resultClassChecking(AbstractSharedSessionContract.java:849)
-	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:835)
-	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
-	at model.PostRepositoryImpl.lambda$deletePost$3(PostRepositoryImpl.java:42)
-	at play.db.jpa.DefaultJPAApi.lambda$withTransaction$1(DefaultJPAApi.java:112)
-	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:169)
-	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:126)
-	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:101)
-	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:110)
-	at model.PostRepositoryImpl.deletePost(PostRepositoryImpl.java:42)
-	at services.PostService.deletePost(PostService.java:42)
-	at controllers.HomeController.deletePost(HomeController.java:100)
-	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$15(Routes.scala:227)
-	at play.core.routing.HandlerInvokerFactory$$anon$8.resultCall(HandlerInvoker.scala:150)
-	at play.core.routing.HandlerInvokerFactory$$anon$8.resultCall(HandlerInvoker.scala:149)
-	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:115)
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:119)
-	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
-	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:175)
-	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
-	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
-	at play.core.j.HttpExecutionContext.$anonfun$execute$1(HttpExecutionContext.scala:64)
-	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:70)
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:59)
-	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:429)
-	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:338)
-	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:312)
-	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:182)
-	at scala.concurrent.Future$.apply(Future.scala:678)
-	at play.core.j.JavaAction.apply(JavaAction.scala:176)
-	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
-	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
-	... 11 common frames omitted
-2022-12-14 17:13:23,045 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-12 - Shutting down connection pool.
-2022-12-14 17:13:23,550 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-201 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:13:23,550 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-201 - Database [default] initialized
-2022-12-14 17:13:23,551 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-201 - Creating Pool for datasource 'default'
-2022-12-14 17:13:23,556 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-201 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:13:23,932 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-201 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:13:23,949 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-201 - Application started (Dev) (no global state)
-2022-12-14 17:15:29,728 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-11 - Shutting down connection pool.
-2022-12-14 17:15:30,066 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-222 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:15:30,066 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-222 - Database [default] initialized
-2022-12-14 17:15:30,066 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-222 - Creating Pool for datasource 'default'
-2022-12-14 17:15:30,073 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-222 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:15:30,468 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-222 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:15:30,482 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-222 - Application started (Dev) (no global state)
-2022-12-14 17:27:51,095 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-24 - Shutting down connection pool.
-2022-12-14 17:27:51,634 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-274 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:27:51,634 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-274 - Database [default] initialized
-2022-12-14 17:27:51,634 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-274 - Creating Pool for datasource 'default'
-2022-12-14 17:27:51,644 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-274 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:27:52,040 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-274 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:27:52,052 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-274 - Application started (Dev) (no global state)
-2022-12-14 17:44:25,788 [ERROR] from play.api.http.DevHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-295 - 
-
-! @8017p262o - Internal server error, for (GET) [/getPosts] ->
- 
-play.sbt.PlayExceptions$CompilationException: Compilation error[ error: cannot find symbol]
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$8(PlayReload.scala:131)
-	at scala.Option.map(Option.scala:230)
-	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:104)
-	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:38)
-	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:156)
-	at scala.util.Either$LeftProjection.map(Either.scala:573)
-	at play.sbt.run.PlayReload$.compile(PlayReload.scala:156)
-	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:80)
-	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
-	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
-	at play.runsupport.Reloader.reload(Reloader.scala:496)
-	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:147)
-	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:308)
-	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:225)
-	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1309)
-	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:542)
-	at akka.stream.impl.fusing.GraphInterpreter.processEvent(GraphInterpreter.scala:496)
-	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:390)
-	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:650)
-	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:521)
-	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:625)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:800)
-	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:818)
-	at akka.actor.Actor.aroundReceive(Actor.scala:537)
-	at akka.actor.Actor.aroundReceive$(Actor.scala:535)
-	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:716)
-	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:579)
-	at akka.actor.ActorCell.invoke(ActorCell.scala:547)
-	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
-	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
-	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
-	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
-	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source)
-	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
-	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
-2022-12-14 17:44:47,689 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-14 - Shutting down connection pool.
-2022-12-14 17:44:48,117 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-296 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:44:48,118 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-296 - Database [default] initialized
-2022-12-14 17:44:48,118 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-296 - Creating Pool for datasource 'default'
-2022-12-14 17:44:48,132 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-296 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:44:48,440 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-296 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:44:48,450 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-296 - Application started (Dev) (no global state)
-2022-12-14 17:45:50,429 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-12 - Shutting down connection pool.
-2022-12-14 17:45:50,794 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-294 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:45:50,794 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-294 - Database [default] initialized
-2022-12-14 17:45:50,794 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-294 - Creating Pool for datasource 'default'
-2022-12-14 17:45:50,801 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-294 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:45:51,167 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-294 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:45:51,177 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-294 - Application started (Dev) (no global state)
-2022-12-14 17:50:44,230 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-16 - Shutting down connection pool.
-2022-12-14 17:50:44,676 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-341 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
-2022-12-14 17:50:44,678 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-341 - Database [default] initialized
-2022-12-14 17:50:44,679 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-341 - Creating Pool for datasource 'default'
-2022-12-14 17:50:44,686 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-341 - datasource [default] bound to JNDI as DefaultDS
-2022-12-14 17:50:44,961 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-341 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.csrf.CSRFFilter
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-
-2022-12-14 17:50:44,970 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-341 - Application started (Dev) (no global state)
-2022-12-14 17:50:53,078 [ERROR] from play.api.http.DefaultHttpErrorHandler in application-akka.actor.default-dispatcher-11 - 
-
-! @8017po743 - Internal server error, for (POST) [/deletePost] ->
+! @801cmoe81 - Internal server error, for (POST) [/deletePost] ->
  
 play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[IllegalArgumentException: Update/delete queries cannot be typed]]
 	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
@@ -492,7 +54,7 @@ Caused by: java.lang.IllegalArgumentException: Update/delete queries cannot be t
 	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:126)
 	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:101)
 	at model.PostRepositoryImpl.deletePost(PostRepositoryImpl.java:41)
-	at services.PostService.deletePost(PostService.java:42)
+	at services.PostService.deletePost(PostService.java:43)
 	at controllers.HomeController.deletePost(HomeController.java:100)
 	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$15(Routes.scala:227)
 	at play.core.routing.HandlerInvokerFactory$$anon$8.resultCall(HandlerInvoker.scala:150)
@@ -515,3 +77,15 @@ Caused by: java.lang.IllegalArgumentException: Update/delete queries cannot be t
 	at play.api.mvc.Action.$anonfun$apply$4(Action.scala:82)
 	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:470)
 	... 11 common frames omitted
+2022-12-15 10:02:56,895 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-11 - Shutting down connection pool.
+2022-12-15 10:02:57,444 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-48 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
+2022-12-15 10:02:57,444 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-48 - Database [default] initialized
+2022-12-15 10:02:57,444 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-48 - Creating Pool for datasource 'default'
+2022-12-15 10:02:57,454 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-48 - datasource [default] bound to JNDI as DefaultDS
+2022-12-15 10:02:57,809 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-48 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-12-15 10:02:57,824 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-48 - Application started (Dev) (no global state)

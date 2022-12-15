@@ -38,7 +38,7 @@ public class PostRepositoryImpl implements PostRepository{
 
     @Override
     public void deletePost(String title) {
-        jpaApi.withTransaction(entityManager -> {return entityManager.createQuery("delete from Post p where p.title=:title",String.class).setParameter("title",title);});
+        jpaApi.withTransaction(entityManager -> {return entityManager.createQuery("delete from Post p where p.title=:title").setParameter("title",title).executeUpdate();});
     }
 
 }

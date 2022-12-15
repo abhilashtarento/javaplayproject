@@ -96,8 +96,8 @@ public class HomeController extends Controller {
 
     public Result deletePost(Http.Request request)
     {
-        Form<String> boundForm= deleteForms.bindFromRequest(request);
-        postService.deletePost(boundForm.value().get());
+        Form<DeleteForm> boundForm= deleteForm.bindFromRequest(request);
+        postService.deletePost(boundForm.value().get().getTitle());
         return  ok(views.html.posts.render(postService.getPosts(), postForm, request));
     }
 }
