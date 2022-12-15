@@ -29,6 +29,12 @@ package controllers {
       Call("POST", _prefix + { _defaultPrefix } + "deletePost")
     }
   
+    // @LINE:13
+    def deletePostApi(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "deletePostApi")
+    }
+  
     // @LINE:7
     def explore: Call = {
       
@@ -39,6 +45,12 @@ package controllers {
     def getPosts(postId:Integer = null): Call = {
       
       Call("GET", _prefix + { _defaultPrefix } + "getPosts" + play.core.routing.queryString(List(if(postId == null) None else Some(implicitly[play.api.mvc.QueryStringBindable[Integer]].unbind("postId", postId)))))
+    }
+  
+    // @LINE:12
+    def createPostApi(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "createPostApi")
     }
   
     // @LINE:6
@@ -55,14 +67,14 @@ package controllers {
   
   }
 
-  // @LINE:13
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:13
+    // @LINE:15
     def versioned(file:Asset): Call = {
       implicit lazy val _rrc = new play.core.routing.ReverseRouteContext(Map(("path", "/public"))); _rrc
       Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[play.api.mvc.PathBindable[Asset]].unbind("file", file))

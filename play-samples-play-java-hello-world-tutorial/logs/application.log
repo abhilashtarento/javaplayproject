@@ -89,3 +89,28 @@ Caused by: java.lang.IllegalArgumentException: Update/delete queries cannot be t
     play.filters.hosts.AllowedHostsFilter
 
 2022-12-15 10:02:57,824 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-48 - Application started (Dev) (no global state)
+2022-12-15 10:30:09,535 [WARN] from com.zaxxer.hikari.pool.HikariPool in HikariPool-3 housekeeper - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=12m11s688ms577µs600ns).
+2022-12-15 11:31:59,840 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-29 - Shutting down connection pool.
+2022-12-15 11:32:00,281 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-153 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
+2022-12-15 11:32:00,281 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-153 - Database [default] initialized
+2022-12-15 11:32:00,281 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-153 - Creating Pool for datasource 'default'
+2022-12-15 11:32:00,288 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-153 - datasource [default] bound to JNDI as DefaultDS
+2022-12-15 11:32:00,622 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-153 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-12-15 11:32:00,636 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-153 - Application started (Dev) (no global state)
+2022-12-15 11:41:05,760 [INFO] from play.api.db.HikariCPConnectionPool in application-akka.actor.internal-dispatcher-12 - Shutting down connection pool.
+2022-12-15 11:41:06,299 [WARN] from play.api.Configuration in play-dev-mode-akka.actor.default-dispatcher-175 - application.conf @ file:/C:/Users/Abhilash%20Manikoth/Downloads/play-samples-play-java-hello-world-tutorial/play-samples-play-java-hello-world-tutorial/target/scala-2.13/classes/application.conf: 13: user is deprecated, use username instead
+2022-12-15 11:41:06,299 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-175 - Database [default] initialized
+2022-12-15 11:41:06,299 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-175 - Creating Pool for datasource 'default'
+2022-12-15 11:41:06,318 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-175 - datasource [default] bound to JNDI as DefaultDS
+2022-12-15 11:41:06,711 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-175 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2022-12-15 11:41:06,711 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-175 - Application started (Dev) (no global state)

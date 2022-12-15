@@ -38,6 +38,16 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:13
+    def deletePostApi: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.deletePostApi",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "deletePostApi"})
+        }
+      """
+    )
+  
     // @LINE:7
     def explore: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.explore",
@@ -54,6 +64,16 @@ package controllers.javascript {
       """
         function(postId0) {
           return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getPosts" + _qS([(postId0 == null ? null : (""" + implicitly[play.api.mvc.QueryStringBindable[Integer]].javascriptUnbind + """)("postId", postId0))])})
+        }
+      """
+    )
+  
+    // @LINE:12
+    def createPostApi: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.HomeController.createPostApi",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createPostApi"})
         }
       """
     )
@@ -80,7 +100,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:13
+  // @LINE:15
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -88,7 +108,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:15
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

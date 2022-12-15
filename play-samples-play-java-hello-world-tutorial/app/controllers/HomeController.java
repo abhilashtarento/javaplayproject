@@ -1,5 +1,6 @@
 package controllers;
 
+import akka.http.javadsl.model.HttpRequest;
 import form.DeleteForm;
 import form.PostForm;
 import model.Post;
@@ -7,6 +8,7 @@ import play.data.Form;
 import play.data.FormFactory;
 import play.mvc.*;
 import services.PostService;
+import services.Util;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -93,7 +95,40 @@ public class HomeController extends Controller {
         return redirect(routes.HomeController.getPosts(null));
     }
 
+    public Result createPostApi(Http.Request request)
+    {
 
+        Form<PostForm> boundForm= postForm.bindFromRequest(request);
+        if(postForm.hasErrors())
+        {
+            return badRequest(Util.createResponse((Object)("Not a valid request"), false));
+        }
+
+       // Class.forName("Hi");
+        try {
+            postService.add(boundForm.get());
+            return ok(Util.createResponse((Object)("Created"),true));
+        }
+        catch (Exception e)
+        {
+            return badRequest(Util.createResponse((Object)("Not a valid request"), false));
+        }
+    }
+
+
+    public Result deletePostApi(Http.Request request)
+    {
+        Form<DeleteForm> boundForm= deleteForm.bindFromRequest(request);
+        try {
+            postService.deletePost(boundForm.value().get().getTitle());
+            return ok(Util.createResponse((Object)"Deleted",true));
+        }
+        catch
+        (Exception e)
+        {
+            return badRequest(Util.createResponse((Object)"Delete Failed",false));
+        }
+    }
     public Result deletePost(Http.Request request)
     {
         Form<DeleteForm> boundForm= deleteForm.bindFromRequest(request);
